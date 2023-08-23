@@ -48,11 +48,11 @@ nav .nav-link ul{
     height: 2.5rem;
     display: flex;
     align-items: center;
-    background-color: #8740FF;
+    border: 2px solid #8740FF;
     border-radius:5px;
 }
 .btn-login a {
-    color: white;
+    color: #8740FF;
     padding: 0 2.5rem;
     font-weight: 500;
 }
