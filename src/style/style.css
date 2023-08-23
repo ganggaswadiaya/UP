@@ -31,12 +31,13 @@
     font-size: 30px;
 }
 
-.nav-link {
-    width: 50%;
+nav .nav-link {
+    width: 70%;
 }
-.nav-link ul{
+nav .nav-link ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-link li a {
@@ -496,7 +497,7 @@ textarea:focus {
     .hamberger {
         display: block;
     }
-    .nav-link {
+    nav .nav-link {
         position: fixed;
         top: 80px;
         right: -100%;
