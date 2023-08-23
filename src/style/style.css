@@ -1,0 +1,744 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+} 
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.9;
+    max-width: 1440px;
+    margin: auto; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.logo h5{
+    color: #8740FF;
+    font-size: 30px;
+}
+
+.nav-link {
+    width: 50%;
+}
+.nav-link ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link li a {
+    color: black;
+}
+
+.btn-login {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #8740FF;
+    border-radius:5px;
+}
+.btn-login a {
+    color: white;
+    padding: 0 2.5rem;
+    font-weight: 500;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #8740FF;
+    margin: 5px;
+}
+
+.hamberger {
+    cursor: pointer;
+    display: none;
+  }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hero {
+    background-image: url(../image/backgroundUP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 100px;
+    margin-top: 95px;
+}
+
+.hero .conten {
+    padding: 100px 0;
+    width: 50%;
+}
+
+.title-hero h5{
+    color: white;
+    font-size: 40px;
+}
+
+.desc-hero p{
+    margin: 25px 0;
+    color: white;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.btn-hero {
+    background-color: white;
+    width: 150px;
+    padding: 0.7rem 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn-hero a {
+    color: #8740FF;
+    font-weight: 500;
+}
+
+#customer {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.cust {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.cust img {
+    cursor: pointer;
+    width: 170px;
+}
+
+.cust img:hover {
+    opacity: 0.8;
+}
+
+img .cll {
+    width: 230px;
+}
+
+#layanan {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.layanan {
+    padding: 100px 100px;
+}
+
+.title-layanan h5{
+    text-align: center;
+    font-size: 40px;
+     margin-top: -70px;
+}
+
+.title-layanan img {
+    margin-left: 450px;
+}
+
+.desc-layanan p{
+    text-align: center;
+    margin: 0 80px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.conten-layanan {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.card:hover{
+    box-shadow: none;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name h6{
+    color: #152C5B;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.desc-card {
+    color: #B0B0B0;
+    margin-bottom: 10px;
+}
+
+.btn-card {
+    background-color: #8740FF;
+    padding: 0.7rem;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn-card a {
+    color: white;
+}
+
+.see-more {
+    opacity: 0.6;
+    margin-top: 50px;
+    text-align: center;
+}
+
+a .see-more {
+    z-index: 0;
+}
+
+.see-more a{
+    color: black;
+}
+
+#wwd {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.title-wwd h5{
+    text-align: center;
+    font-size: 40px;
+     margin-top: -70px;
+}
+
+.title-wwd img {
+    margin-left: 300px;
+}
+
+.desc-wwd p{
+    text-align: center;
+    margin: 0 80px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.conten-wwd {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.wwd {
+    padding: 30px 100px;
+}
+
+.img-wwd img {
+    border: 1px solid black;
+    width: 600px;
+} 
+
+.name-wwd h6 {
+    color: white;
+    font-size: 25px;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+.ket p{
+    width: 400px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ket-wwd {
+    position: relative;
+    top: -280px;
+    height: 274px;
+    background: transparent;
+    opacity: 0;
+    padding-left: 20px;
+    transition: all 0.5s;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgb(18, 18, 18));
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.ket-wwd:hover {
+    opacity: 1;
+}
+
+.btn-wwd a {
+    color: white;
+}
+
+.btn-wwd {
+    margin-bottom: 30px;
+}
+
+.title-alasan {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.conten-alasan {
+    margin-left: 80px;
+}
+
+.desc-alasan {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.warna p {
+    background-color: #F4EA92;
+    padding: 10px;
+}
+
+#alasan {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.alasan {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    margin-top: -140px;
+    margin-right: 50px;
+}
+
+span {
+    color: #8740FF;
+}
+
+.btn-pesan {
+    margin-top: 30px;
+    background-color: #8740FF;
+    width: 200px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.btn-pesan a {
+    color: white;
+}
+
+#choose {
+    margin: 80px 0; 
+    background-color: #8740FF;
+}
+
+.choose {
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.title-choose h4 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.desc-choose p{
+    color: white;
+}
+
+.chooseTitle {
+    margin-right: 50px;
+}
+
+.contenChoose {
+    width: 50%;
+    text-align: center;
+}
+
+.cardTesti {
+    padding: 30px 60px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.profileTesti img {
+    border-radius: 50%;
+    width: 100px;
+    border: 5px solid #F4EA92;
+    position: relative;
+    margin-top: -60px;
+}
+
+.nameProfile {
+    font-size: 30px;
+}
+
+.titleProfile {
+    font-size: 15px;
+}
+
+.imgKomen {
+    text-align: start;
+    margin-top: 10px;
+}
+
+.komen {
+    position: relative;
+    margin-top: -40px;
+}
+
+#kontak {
+    margin: 50px 100px;
+}
+
+.kontak {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleKontak h5{
+    font-size: 40px;
+     margin-top: -70px;
+}
+
+.titleKontak img {
+    margin-left: 50px;
+}
+
+.mapsKontak {
+    margin-right: 80px;
+}
+
+iframe {
+    width: 500px;
+    height: 400px;
+}
+
+.formKontak {
+    width: auto;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.name, .email, .pesan {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 30px;
+    border: 1px solid #8740FF;
+    border-radius: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #8740FF;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.btnKontak a{
+    color: white;
+    padding: 10px 30px;
+    background-color: #8740FF;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 460px) {
+    .hamberger {
+        display: block;
+    }
+    .nav-link {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+        justify-content: end;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.8s;
+        z-index: -1;
+    }
+    .nav-link ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-link ul li {
+        margin: 20px;
+    }
+    .nav-link ul li a {
+        color: #8740FF;
+    }
+    .nav-link.active {
+        right: 0;
+      }
+    .navbar {
+        padding: 20px 20px;
+    }
+    .btn-login {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .nav-link .btn-login {
+        opacity: 1;
+    }
+    #hero {
+        background-image: url(../image/backgroundUP\ 1\ mobile.png);
+        background-repeat: no-repeat;
+    }
+    .hero {
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 20px;
+        margin-top: 90px;
+        
+    }
+    .hero .conten {
+        padding: 50px 0;
+        width: 100%;
+    }
+    .title-hero h5 {
+        font-size: 25px;
+    }
+    .desc-hero p {
+        font-size: 15px;
+    }
+    .cust {
+        padding: 20px 20px;
+        overflow-x: auto;
+    }
+    .cust img {
+        width: 100px;
+        margin: 0 15px;
+    }
+    .layanan {
+        padding: 100px 20px;
+    }
+    .title-layanan h5 {
+        text-align: center;
+        font-size: 25px;
+        margin-top: -70px;
+    }
+    .desc-layanan p {
+        text-align: center;
+        margin: 0;
+        margin-top: 30px;
+        font-size: 15px;
+        opacity: 0.9;
+    }
+    .title-layanan img {
+        margin-left: 40px;
+        height: 35px;
+        z-index: -1;
+        position: absolute;
+    }
+    .conten-layanan {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .card {
+        width: 90%;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    .name h6 {
+        font-size: 20px;
+    }
+    .desc-card {
+        font-size: 15px;
+    }
+    .btn-card a{
+        opacity: 0.8;
+    }
+    .wwd {
+        padding: 10px 30px;
+    }
+    .desc-wwd p{
+        font-size: 15px;
+        opacity: 0.9;
+        margin: 30px 0;
+    }
+    .title-wwd img {
+        position: absolute;
+        z-index: -2;
+        margin-left: 0;
+        height: 35px;
+        margin-left: 30px;
+    }
+    .img-wwd img {
+        width: 100%;
+    }
+    .card1 {
+        margin-top: -20px;
+    }
+    .ket p {
+        display: none;
+    }
+    .conten-wwd {
+        margin-top: 50px;
+    }
+    .ket-wwd {
+        top: -124px;
+        height: 120px;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+    .name-wwd h6 {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 50px;
+    }
+    .btn-wwd {
+        font-size: 13px;
+    }
+    .see-more {
+        margin-top: 20px;
+    }
+    .title-wwd h5 {
+        font-size: 25px;
+    }
+    .img-alasan img{
+        width: 100%;
+    }
+    .alasan {
+        padding: 80px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .title-alasan h5, .desc-alasan p {
+        text-align: left;
+    }
+    .title-alasan h5 {
+        font-size: 25px;
+        margin-top: -30px;
+    }
+    .desc-alasan p {
+        font-size: 15px;
+    }
+    .conten-alasan {
+        margin-left: 0;
+    }
+    #choose {
+        margin: 30px 0; 
+        background-color: #8740FF;
+    }
+    .choose {
+        padding: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cardTesti {
+        padding: 30px 30px;
+    }
+    .title-choose h4{
+        font-size: 25px;
+    }
+    .desc-choose p {
+        font-size: 15px;
+        opacity: 0.8;
+    }
+    .contenChoose {
+        margin-top: 80px;
+        width: 100%;
+    }
+    .nameProfile {
+        font-size: 20px;
+    }
+    .titleProfile p {
+        font-size: 10px;
+    }
+    .imgKomen img{
+        width: 50px;
+    }
+    .komen p {
+        font-size: 15px;
+    }
+    .chooseTitle {
+        margin-right: 0;
+    }
+    #kontak {
+        margin: 50px 20px;
+    }
+    .kontak {
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+    .mapsKontak {
+        margin-right: 0;
+    }
+    .titleKontak h5{
+        font-size: 25px;
+         margin-top: 30px;
+    }
+    .titleKontak img {
+        position: absolute;
+        z-index: -3;
+        height: 35px;
+        margin-left: 50px;
+    }
+    .formKontak {
+        width: 100%;
+    }
+}
