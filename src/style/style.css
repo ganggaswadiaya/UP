@@ -5,16 +5,12 @@
     font-family: "Poppins";
 } 
 
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: white;
-    opacity: 0.9;
-    max-width: 1440px;
-    margin: auto; 
+h5 {
+    opacity: 0.8;
+}
+
+p {
+    opacity: 0.6;
 }
 
 .navbar {
@@ -24,16 +20,37 @@
     align-items: center;
     width: 100%;
     height: 80%;
+    max-width: 1440px;
+    margin: auto; 
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.9;
 }
 
 .logo h5{
+    font-style: italic;
     color: #8740FF;
     font-size: 30px;
+    font-weight: 500;
 }
 
 nav .nav-link {
-    width: 70%;
+    width: 60%;
 }
+
+nav .nav-link a:hover {
+    color: #8740FF;
+    border-bottom: 1.5px solid #8740FF;
+    transition: 0.2s ease-in-out;
+}
+
 nav .nav-link ul{
     display: flex;
     justify-content: space-between;
@@ -79,26 +96,28 @@ a {
 }
 
 #hero {
-    background-image: url(../image/backgroundUP.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .hero {
-    max-width: 1440px;
-    margin: auto;
+    background-image: url(../image/backgroundUP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 120px 100px;
     padding: 50px 100px;
-    margin-top: 95px;
 }
 
 .hero .conten {
     padding: 100px 0;
-    width: 50%;
+    width: 65%;
 }
 
 .title-hero h5{
     color: white;
     font-size: 40px;
+    opacity: 1;
 }
 
 .desc-hero p{
@@ -110,10 +129,10 @@ a {
 
 .btn-hero {
     background-color: white;
-    width: 150px;
-    padding: 0.7rem 0;
+    width: 250px;
+    padding: 13px 0;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 .btn-hero a {
     color: #8740FF;
@@ -123,6 +142,22 @@ a {
 #customer {
     max-width: 1440px;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.title-cust h5 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #331763;
+}
+
+.title-cust p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #331763;
 }
 
 .cust {
@@ -134,10 +169,8 @@ a {
 .cust img {
     cursor: pointer;
     width: 170px;
-}
-
-.cust img:hover {
-    opacity: 0.8;
+    filter: gray;
+    -webkit-filter: grayscale(1);
 }
 
 img .cll {
@@ -150,13 +183,14 @@ img .cll {
 }
 
 .layanan {
-    padding: 100px 100px;
+    padding: 50px 100px;
 }
 
 .title-layanan h5{
     text-align: center;
     font-size: 40px;
      margin-top: -70px;
+     opacity: 0.8;
 }
 
 .title-layanan img {
@@ -168,52 +202,70 @@ img .cll {
     margin: 0 80px;
     margin-top: 30px;
     font-size: 20px;
+    opacity: 0.6;
 }
 
-.conten-layanan {
+.contenLayanan {
     margin-top: 50px;
+}
+
+.cardLayanan {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-.card {
-    width: 30%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    border-radius: 3px;
+.layanan1, .layanan2, .layanan3 {
+    margin-top: 50px;
 }
 
-.card:hover{
-    box-shadow: none;
+.mainCard {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.name h6{
-    color: #152C5B;
-    margin: 10px 0;
+.mainCard h6{
     font-size: 30px;
+    color: #331763;
 }
 
-.desc-card {
-    color: #B0B0B0;
-    margin-bottom: 10px;
+.imageLayanan h6{
+    font-size: 30px;
+    color: #331763;
+    display: none;
+    margin-left: -25px;
+    font-size: 25px;
 }
 
-.btn-card {
+.mainCard p {
+    color: #331763;
+    font-size: 20px;
+}
+
+.layanan2 .mainCard{
+    order: 1;
+}
+.layanan2 .imageLayanan {
+    order: 2;
+}
+
+.layanan2 .imageLayanan h6 {
+    margin-left: 0;
+}
+
+.cardLayanan .btn {
     background-color: #8740FF;
-    padding: 0.7rem;
-    border-radius: 5px;
-    width: 150px;
+    width: 250px;
     text-align: center;
+    padding: 13px 0;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
 }
 
-.btn-card a {
-    color: white;
+.imageLayanan img {
+    width: 530px;
 }
 
 .see-more {
@@ -233,6 +285,7 @@ a .see-more {
 #wwd {
     max-width: 1440px;
     margin: auto;
+    padding: 100px 100px;
 }
 
 .title-wwd h5{
@@ -242,7 +295,7 @@ a .see-more {
 }
 
 .title-wwd img {
-    margin-left: 300px;
+    margin-left: 500px;
 }
 
 .desc-wwd p{
@@ -250,82 +303,54 @@ a .see-more {
     margin: 0 80px;
     margin-top: 30px;
     font-size: 20px;
+    margin-bottom: 50px;
 }
 
 .conten-wwd {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
 }
 
-.wwd {
-    padding: 30px 100px;
-}
-
-.img-wwd img {
-    border: 1px solid black;
-    width: 600px;
-} 
-
-.name-wwd h6 {
-    color: white;
-    font-size: 25px;
-    padding-top: 70px;
-    margin-bottom: 30px;
-}
-
-.ket p{
-    width: 400px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.ket-wwd {
-    position: relative;
-    top: -280px;
-    height: 274px;
-    background: transparent;
-    opacity: 0;
-    padding-left: 20px;
+.conten-wwd img {
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgb(18, 18, 18));
 }
 
-.card1 {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
+.conten-wwd img:hover {
+    box-shadow: none;
 }
 
-.ket-wwd:hover {
-    opacity: 1;
-}
-
-.btn-wwd a {
-    color: white;
-}
-
-.btn-wwd {
-    margin-bottom: 30px;
-}
-
-.title-alasan {
+.title-alasan h5{
     font-size: 40px;
-    margin-top: 30px;
+    color: black;
+    margin-bottom: 50px;
 }
 
 .conten-alasan {
     margin-left: 80px;
 }
 
-.desc-alasan {
-    margin: 20px 0;
-    font-size: 20px;
+.conten-alasan p {
+    opacity: 1;
 }
 
-.warna p {
-    background-color: #F4EA92;
-    padding: 10px;
+.desc-alasan {
+    color: #331763;
+    margin: 20px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.desc-alasan img {
+    width: 35px;
 }
 
 #alasan {
@@ -337,25 +362,23 @@ a .see-more {
     width: 100%;
     padding: 0 100px;
     display: flex;
-    margin-top: -140px;
+    align-items: center;
+    margin-top: 50px;
     margin-right: 50px;
-}
-
-span {
-    color: #8740FF;
 }
 
 .btn-pesan {
     margin-top: 30px;
     background-color: #8740FF;
-    width: 200px;
+    width: 250px;
     text-align: center;
-    padding: 15px 0;
-    border-radius: 10px;
+    padding: 13px 0;
+    border-radius: 20px;
 }
 
 .btn-pesan a {
     color: white;
+    font-size: 20px;
 }
 
 #choose {
@@ -366,9 +389,14 @@ span {
 .choose {
     padding: 80px 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     margin: auto;
+}
+
+.chooseTitle {
+    width: 50%;
 }
 
 .title-choose h4 {
@@ -381,26 +409,29 @@ span {
     color: white;
 }
 
-.chooseTitle {
-    margin-right: 50px;
-}
-
 .contenChoose {
-    width: 50%;
+    display: flex;
+    gap: 50px;
     text-align: center;
+    flex-direction: row-reverse;
 }
 
 .cardTesti {
+    width: 350px;
     padding: 30px 60px;
     background-color: white;
     border-radius: 3px;
+}
+
+.cardTesti p {
+    opacity: 1;
 }
 
 .profileTesti img {
     border-radius: 50%;
     width: 100px;
     border: 5px solid #F4EA92;
-    position: relative;
+    /* position: relative; */
     margin-top: -60px;
 }
 
@@ -485,14 +516,35 @@ textarea:focus {
     outline: none;
 }
 
+iframe {
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 100px;
+    height: 250px;
+    background-color: #8740FF;
+}
+
 .btnKontak a{
     color: white;
-    padding: 10px 30px;
+    padding: 13px 75px;
     background-color: #8740FF;
     border-radius: 5px;
+    border-radius: 20px;
 }
 
 /* Responsive */
+@media screen and (max-width: 1280px) {
+    .hero .conten {
+        width: 90%;
+    }
+    .desc-hero {
+        width: 70%;
+    }
+}
 @media screen and (max-width: 460px) {
     .hamberger {
         display: block;
@@ -536,15 +588,13 @@ textarea:focus {
         opacity: 1;
     }
     #hero {
-        background-image: url(../image/backgroundUP\ 1\ mobile.png);
-        background-repeat: no-repeat;
+
     }
     .hero {
-        max-width: 1440px;
-        margin: auto;
+        background-image: url(../image/backgroundUP\ 1\ mobile.png);
+        background-repeat: no-repeat;
+        margin: 120px 20px;
         padding: 0 20px;
-        margin-top: 90px;
-        
     }
     .hero .conten {
         padding: 50px 0;
@@ -563,6 +613,10 @@ textarea:focus {
     .cust img {
         width: 100px;
         margin: 0 15px;
+        filter: gray;
+    }
+    .title-cust p {
+        padding: 0 20px;
     }
     .layanan {
         padding: 100px 20px;
@@ -585,16 +639,32 @@ textarea:focus {
         z-index: -1;
         position: absolute;
     }
-    .conten-layanan {
+    .cardLayanan {
         flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
+        text-align: center;
     }
-    .card {
-        width: 90%;
-        padding: 20px;
-        margin: 15px 0;
-        border-radius: 5px;
+    .mainCard h6 {
+        display: none;
+    }
+    .mainCard {
+        align-items: center;
+    }
+    .mainCard p {
+        font-size: 15px;
+    }
+    .cardLayanan .btn {
+        width: 150px;
+        font-size: 15px;
+    }
+    .imageLayanan h6 {
+        display: block;
+    }
+    .imageLayanan img {
+        width: 300px;
+    }
+    .layanan2 .imageLayanan {
+        order: 1;
+        margin-left: 0;
     }
     .name h6 {
         font-size: 20px;
@@ -605,8 +675,11 @@ textarea:focus {
     .btn-card a{
         opacity: 0.8;
     }
+    #wwd {
+        padding: 0;
+    }
     .wwd {
-        padding: 10px 30px;
+        padding: 10px 20px;
     }
     .desc-wwd p{
         font-size: 15px;
@@ -659,6 +732,7 @@ textarea:focus {
     }
     .alasan {
         padding: 80px 20px;
+        padding-top: 0;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -668,7 +742,6 @@ textarea:focus {
     }
     .title-alasan h5 {
         font-size: 25px;
-        margin-top: -30px;
     }
     .desc-alasan p {
         font-size: 15px;
@@ -713,6 +786,7 @@ textarea:focus {
         font-size: 15px;
     }
     .chooseTitle {
+        width: 100%;
         margin-right: 0;
     }
     #kontak {
@@ -723,7 +797,7 @@ textarea:focus {
         align-items: center;
     }
     iframe {
-        width: 300px;
+        width: 320px;
         height: 200px;
     }
     .mapsKontak {
@@ -741,5 +815,16 @@ textarea:focus {
     }
     .formKontak {
         width: 100%;
+    }
+    input {
+    width: 100%;
+    }
+
+    textarea {
+    width: 100%;
+    }
+    .btn-pesan {
+        width: 200px;
+        font-size: 15px;
     }
 }
